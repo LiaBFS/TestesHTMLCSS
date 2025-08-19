@@ -21,7 +21,8 @@
             
         }
 
-        table{
+        table,td,th{
+            border-collapse: collapse;
             border: 1px solid black;
         }
 
@@ -88,18 +89,31 @@
         <table>
 
             <tr>
-                <td>Item</td>
-                <td>Desc</td>
-                <td>Quantidade</td>
+                <th>Item</th>
+                <th>Desc</th>
+                <th>Quantidade</th>
             </tr>
             <tr>
 
                 <td>1</td>
                 <td>CARNE</td>
-                <TD>1KG</TD>
+                <td>1KG</td>
                 
             </tr>
         </table>
+
+        <div>
+            <h2>Formularios</h2>
+            <label for="nomeusuario">Nome</label>
+            <input id="nomeusuario" type="text">
+            <br>
+            <label for="cor">Cor</label>
+            <input id="cor" type="color">
+            <br>
+            <label for="dataNascimento">Data Nascimento</label>
+            <input id="data" type="date">
+        
+        </div>
     
     </body>
 </html>
