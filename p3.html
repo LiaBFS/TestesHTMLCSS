@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="p3.css">
+    <style>
+        dd{color:blue;}
+    </style>
+
     <title>Document</title>
 </head>
 <body>
+    <a href="index.html">Voltar</a>
     <p class="vermelho"> Uma regra css pode ser definida com a seguinte sintaxe</p>
 
     <pre>
@@ -23,15 +28,24 @@
 
     <dl>
         <dt>CSS externo</dt>
-        <dd>Quando definidos as regras css a serem utilizadas por meio de um arquivo externo .css, vinculando ele ao html por meio da tag &lt; link &gt; no head do documento html</dd>
+        <dd>Quando definidos as regras css a serem utilizadas por meio de um arquivo externo .css, vinculando ele ao 
+            html por meio da tag &lt; link &gt; no head do documento html</dd>
 
         <dt>CSS Incorporado "no documento"</dt>
         <dd> Quando definimos as regras css por meio da tag &lt;style &gt;</dd>
          
         <dt>CSS inline</dt>
-        <dd> Quando definimos código css de estilizacao no proprio elemento HTML, como: <span style="color: blueviolet;">Texto de cor violeta com css inline</span></dd>
+        <dd style="color: red"> Quando definimos código css de estilizacao no proprio elemento HTML, 
+            como: <span style="color: blueviolet;">Texto de cor violeta com css inline</span></dd>
          
     </dl>
+
+    <form action="">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+        <input type="submit" value="Enviar">
+
+    </form>
 
 </body>
 </html>
