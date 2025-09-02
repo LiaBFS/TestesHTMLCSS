@@ -24,21 +24,35 @@
 
     #item5{
         position: fixed;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
+        
+        /**transform: translate(-50%,-50%);**/
 
-        animation: subir 1s none 0s infinite;
+        animation: name duration timing-function delay iteration-count direction fill-mode;
+
+        animation: subir 2s linear 0s infinite none ;
     }
     
     @keyframes subir{
         0%{
+            top: 0vh;
+            left: 0vw;
+            background-color: pink;
+        }
+        20%{
+            top: 0vh;
+            left: 90vw;
+            background-color: palevioletred;
 
         }
-
+        60%{
+            top: 90vh;
+            left: 90vw;
+            background-color: rgb(197, 47, 97);
+        }
         100%{
-            top: 0px;
-            transform: rotate(180deg);
+            top: 90vh;
+            left: 0vw;
+            background-color: rgb(124, 5, 45);
         }
     }
     
