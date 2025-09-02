@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+
+    html,body{
+        margin: 0px;
+        padding: 0px;
+    }
+    .box{
+        display: inline-block;
+        height: 10vw;
+        width: 10vw;
+        
+    }
+    
+
+
+    #item5{background-color: magenta;}
+
+    #item5{
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+
+        animation: subir 1s none 0s infinite;
+    }
+    
+    @keyframes subir{
+        0%{
+
+        }
+
+        100%{
+            top: 0px;
+            transform: rotate(180deg);
+        }
+    }
+    
+    
+    
+    
+    
+    </style>
+
+
+    
+</head>
+<body>
+    
+
+    
+        
+        <div id="item5" class="box">5</div>
+    
+
+
+    
+</body>
+</html>
