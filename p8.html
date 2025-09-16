@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            height: 100vh;
+            display: grid;
+            /**grid-template-columns: 1fr 1fr 1fr 1fr 1fr;**/
+
+            grid-template-rows: 1fr 1fr 1fr;
+
+            grid-template-areas: "header header header header"  "main main empty sidebar" "footer footer footer footer";
+        }
+
+        #caixa1 {
+            background-color: rgb(151, 234, 255);
+            grid-area: header;
+        }
+
+        #caixa2 {
+            background-color: pink;
+            grid-area: main;
+        }
+
+        #caixa3 {
+            background-color: rgb(216, 252, 162);
+            grid-area: sidebar;
+        }
+
+        #caixa4 {
+            background-color: rgb(255, 255, 154);
+            grid-area: empty;
+        }
+
+        #caixa5 {
+            background-color: rgb(224, 147, 255);
+            grid-area: footer;
+        }
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="box" id="caixa1">1</div>
+    <div class="box" id="caixa2">2</div>
+    <div class="box" id="caixa3">3</div>
+    <div class="box" id="caixa4">4</div>
+    <div class="box" id="caixa5">5</div>
+
+</body>
+</html>
