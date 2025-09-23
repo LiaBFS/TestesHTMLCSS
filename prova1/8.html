@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <style>
+
+        /**mudar a cor de fundo quando o site tiver menos que 400px**/
+        @media screen and (max-width: 700px ) {
+            .box{
+               grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+               grid-template-areas: "header banner leftAside mainContent rightAside lowContent footer";
+              }
+
+            #header{
+                grid-area: header;
+                background-color: yellow;
+            }
+            
+            #banner{
+                grid-area: banner;
+                background-color: red;
+            }
+
+            #leftAside{
+                grid-area: leftAside;
+                background-color: green;
+            }
+
+            #mainContent{
+                grid-area: mainContent;
+                background-color: blue;
+            }
+            #rightAside{
+                grid-area: rightAside;
+                background-color: yellow;
+            }
+
+            #lowContent{
+                grid-area: lowContent;
+                background-color: green;
+            }
+
+            #footer{
+                grid-area: footer;
+                background-color: blue;
+            }
+
+
+        }
+        /**@media screen and (max-width: 1000px) {
+            body {
+                background-color: blue;
+            }
+            
+        }**/
+
+        
+
+        
+
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="box">
+    <div class="box" id="header">header</div>
+    <div class="box" id="banner">banner</div>
+    <div class="box" id="mainContent">main content</div>
+    <div class="box" id="rightAside">right aside</div>
+    <div class="box" id="leftAside">left aside</div>
+    <div class="class" id="lowContent">low content</div>
+    <div class="class" id="footer">footer</div>
+    </div>
+    
+</body>
+</html>

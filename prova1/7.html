@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio 7</title>
     <style>
-        .box{
+        body{
 
-            border: 1px solid gray;
+           
             width: 1000px;
             height: 800px;
            
         
         }
 
+        
         .bola1{
             width: 80px;
             height: 80px;
@@ -23,7 +24,7 @@
 
             position: absolute;
             top: 340px;
-            left: 440px;
+            left: 475px;
             
 
         }
@@ -47,8 +48,47 @@
 
             position: absolute;
             left: 930px;
+            top: 10px;
             
+
+        }
+
+        .bola4{
+            width: 80px;
+            height: 80px;
+
+            background-color: rgb(97, 247, 77);
+            border-radius: 100%;
+
+            position: absolute;
+            bottom: 135px;
+
+
+        }
+
+        .bola5{
+             width: 80px;
+            height: 80px;
+
+            background-color: rgb(255, 241, 118);
+            border-radius: 100%;
+
+            position: absolute;
+
+            bottom: 135px;
+            left: 930px;
+
             
+
+        }
+
+        body:hover{
+            animation: girar 3s linear infinite;
+        }
+
+        @keyframes girar{
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
         }
 
     </style>
@@ -56,13 +96,13 @@
 </head>
 <body>
 
-    <div class="box">
+    
         <div class="bola1"></div>
         <div class="bola2"></div>
         <div class="bola3"></div>
         <div class="bola4"></div>
         <div class="bola5"></div>
-    </div>
+    
     
 </body>
 </html>
