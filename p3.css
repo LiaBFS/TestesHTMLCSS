@@ -23,6 +23,10 @@ Seletor Universal:
 
 **/
 
+    div.bla span{
+        border: solid red;
+    }
+
 
 p{
     background-color: azure;

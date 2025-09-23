@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+
+    <style>
+
+        .box{
+            border: 2px solid black;
+            width: 1500px;
+            height: 350px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "japao franca italia";
+        }
+
+        .japao{
+            grid-area: japao;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bola{
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            border-radius: 100%;
+
+        }
+
+        .franca{
+            grid-area: franca;
+            display: grid;
+            grid-template-rows: 1fr, 1fr, 1fr;
+            grid-template-areas: "vermelho" "branco" "azul";
+            
+        }
+
+        .vermelhoF{
+            background-color: red;
+            grid-area: vermelho;
+        }
+
+        .brancoF{
+            background-color: white;
+            grid-area: branco;
+        }
+
+        .azulF{
+            background-color: blue;
+            grid-area: azul;
+        }
+
+        .italia{
+            grid-area: italia;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "verde branco vermelho";
+        }
+
+        .verdeI{
+            background-color: green;
+            grid-area: verde;
+        }
+
+        .brancoI {
+            background-color: white;
+            grid-area: branco;
+        }
+
+        .vermelhoI{
+            background-color: red;
+            grid-area: vermelho;
+        }
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <div class="box">
+
+    <div class="japao">
+        
+        <div class="bola"></div>
+        
+    </div>
+
+    <div class="franca">
+        <div class="vermelhoF"></div>
+        <div class="brancoF"></div>
+        <div class="azulF"></div>
+    </div>
+
+    <div class="italia">
+        <div class="vermelhoI"></div>
+        <div class="brancoI"></div>
+        <div class="verdeI"></div>
+    </div>
+
+
+    </div>
+
+    
+</body>
+</html>
