@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        //codigo javaScript
+
+        //alert("Ola");
+
+        //let nome = "Lia"
+
+        /**
+        var i = 0
+        console.log(i);
+        console.log(typeof(i))
+        i="Romulo"
+        console.log(i);
+        console.log(typeof(i))
+        document.body.style.backgroundColor="lightgray"
+        **/
+
+        //no Console
+        //document.body.childNodes
+
+
+
+        button = document.createElement('button');
+        button.id = "btn"
+        button.innerText = "Clique"
+
+        var contador = 0;
+
+        paragrafo = document.createElement("p")
+        paragrafo.id = "p"
+
+        document.body.appendChild(paragrafo)
+        document.body.appendChild(button)
+
+        document.body.style.height = "100vh"
+        document.body.style.display = "flex"
+        document.body.style.justifyContent = "center"
+        document.body.style.alignItems = "center"
+        document.body.style.flexDirection = "column"
+
+        button.addEventListener("click",()=> {
+
+            contador++
+            paragrafo.innerText = contador
+
+        })
+
+        /**document.body.addEventListener("click",()=> {
+
+            contador++
+            paragrafo.innerText = contador
+
+        })**/
+        
+
+
+    </script>
+</body>
+</html>
