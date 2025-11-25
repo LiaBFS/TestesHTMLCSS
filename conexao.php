@@ -21,6 +21,7 @@
         $stmt ->bindParam (':login',$login); 
         $stmt ->bindParam (':senha',$senha); 
         $stmt ->bindParam (':id',$id);
+        $stmt ->bindParam (':id',$id);
         return $stmt ->execute();
 
     }
